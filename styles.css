@@ -1,0 +1,50 @@
+
+body{
+  font-family: 'Open Sans',Arial,sans-serif;
+  line-height: 1.5;
+  text-align; center;
+  margin: 0 auto;
+
+}
+
+
+nav {
+background-color: #f6f6f6;
+width: 100%;
+text-align: center;
+padding: 20px ;
+
+}
+#navbar header{
+  font-size: 30px;
+}
+#navbar ul {
+width: 100%
+  margin: auto;
+
+}
+#navbar li{
+  list-style: none;
+  background-color: red;
+  margin: 0 auto;
+  text-decoration: none;
+
+
+
+
+}
+#navbar a{
+  text-decoration: none;
+  cursor: pointer;
+}
+#main-doc{
+  max-width: 90%;
+  text-align: center;
+  margin: auto;
+}
+.main-section{
+  padding: 40px 0;
+}
+header{
+  font-size: 20px;
+}
