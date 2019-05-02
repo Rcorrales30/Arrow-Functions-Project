@@ -2,7 +2,9 @@
 <html lang="en" dir="ltr">
   <head>
     <link rel="stylesheet" type = "text/css" href="styles.css">
+    <link rel="stylesheet" type = "text/css" media= "screen and (min-width: 700px)" href="styles.css">
     <meta charset="utf-8">
+    <meta content ="width=device-width, initial-scale=1.0" name= "viewport" />
     <title>Intro to Arrow Functions</title>
   </head>
   <body>
@@ -31,43 +33,34 @@
            consists of the "function" keyword(declares the function). Followed by the name
            of the function. Followed by parameters. Followed by a statement. </p>
         <code>function add (a, b) {
-          return a + b;
-          }
-        </code>
+  return a + b;
+}</code>
         <p>The name of this function is "add". Parameters are "a" and "b". Parameters are
           enclosed in parentheses and separated by commas. The statement is enclosed in
           curly brackets.   </p>
-        <code>
-          console.log(add(5, 6)); // logs 11;
-         </code>
+        <code>console.log(add(5, 6)); // logs 11;</code>
       </section>
       <section class = "main-section" id = "What_is_an_Arrow_Function?">
         <header>What is an Arrow Function?</header>
         <p>An arrow function is a new way to write a function introduced in ES6. Its called an
            arrow function due to the syntax looking like a fat arrow "=>".</p>
-          <code>
-            var add = (a, b) => a + b <br/>
-            console.log(add(2,3)) // equals 5
-          <code>
+          <code>var add = (a, b) => a + b <br/>
+console.log(add(2,3)) // equals 5</code>
       </section>
       <section class = "main-section" id = "When_Should_I_Use_Them?">
     <header>When Should I Use Them?</header>
         <p>Arrow functions work really well with higher order functions such as map(), filter()
           , or reduce().</p>
           <p>Instead of:</p>
-           <code>
-             var example = [1, 2, 3]
+           <code>var example = [1, 2, 3]
 
-             example.map(function(number) {
-               return number * 2} // returns [2, 4, 6]
-             })
-           </code>
+example.map(function(number) {
+  return number * 2} // returns [2, 4, 6]
+})</code>
          <p>
            You can write:
          </p>
-             <code>
-               example.map((number) => number * 2)
-             </code>
+             <code>example.map((number) => number * 2)</code>
           <p>As you can see arrow functions just remove the need to declare using "function"
             key word. And no need to use the "return" key word either. Also I dont even need
             to enclose my statement in curly brackets. if for some reason you do need to
@@ -90,7 +83,7 @@
 
         <header>Summary</header>
         <h3>Pros</h3>
-        <ul>
+        <ul class = "prosCons">
           <li>Arrow syntax automatically binds "this" to the parent scope.</li>
           <li>The syntax allows an implicit return when there is no body
             block(enclosing curly braces), resulting in cleaner and usually
@@ -98,7 +91,7 @@
           <li>Work very well with higher oreder functions. Such as map, filter, and reduce.</li>
         </ul>
         <h3>Cons</h3>
-        <ul>
+        <ul class = "prosCons">
           <li>Not good for object methods</li>
           <li>Since they are anonymous. They are harder to debug.</li>
           <li>They don't work well with functions that have dynamic context.
